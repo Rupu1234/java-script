@@ -9,7 +9,15 @@
 <body>
 
 <script>
-
+  let i=parseInt(prompt("Enter the number"));
+	let k=0;
+		while(i>0){
+			let rev=(i%10);
+				i=(i-rev)/10;
+				k+=rev;
+		}
+		document.write(k);
+	
 </script>
 </body>
 </html>
