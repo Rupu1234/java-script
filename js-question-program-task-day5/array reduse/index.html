@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>slice</title>
+	<title>reduse</title>
 </head>
 <body>
 <script>
-    let cars=["audi","bens","bmw","range rover"];
-		document.write(cars.slice(2,3));
+    let add=[200,20,15];
+	let a=add.reduce(myfun);
+	function myfun(total,num){
+	   return total - num;
+	}
+	document.write(a);
+	
        
 </script>
 </body>
-</html
+</html>
