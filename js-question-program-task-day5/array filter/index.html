@@ -9,12 +9,11 @@
 <body>
 <script>
     let add=[20,30,35,22,15];
-	let mynew=add.map(myfunction);
-	  document.write(mynew);
+	let mynew=add.filter(myfunction)
 	 function myfunction(num){
-	   return num*10;
+	   return num > 22;
 	 }
-       
+       document.write(mynew);
 </script>
 </body>
 </html>
