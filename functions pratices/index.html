@@ -134,8 +134,51 @@
     //     array(funname);
 
     //array index
-    
+      
+    // let a=parseInt(prompt("Enter a main array"));
+    // let b=[];
+    // for(i=0; i<a; i++){
+    //     b[i]=parseInt(prompt("enter a inner array"));
+    // }
+    //  console.log(b);
+    // let c=parseInt(prompt("Enter the value"));
+    // let d=b[c];
+    // console.log(d);
 
+    //  let a=parseInt(prompt("Enter the length array"));
+    //  let b=[];
+    //  let c;
+    //   for(i=0;i<a;i++){
+    //      c=[]
+    //   let d=parseInt(prompt("Enter the create array"));
+    //      for(j=0;j<d;j++){
+    //         c[i]=parseInt(prompt("enter inner value"));
+    //      }
+    //     b[i]=c;
+    //   }
+    //   console.log(b);
+
+    //   let newvalue=parseInt(prompt("first indexvalue"));
+    //   let newvalue2=parseInt(prompt("second index value"));
+    //   console.log(b[newvalue][newvalue2]);
+
+    let a=parseInt(prompt("Enter the length array"));
+     let b=[];
+     let c;
+      for(i=0;i<a;i++){
+         c=[]
+      let d=parseInt(prompt("Enter the create array"));
+         for(j=0;j<d;j++){
+            c[j]=parseInt(prompt("enter inner value"));
+         }
+        b[i]=c;
+      }
+    vel(b);
+      function vel(xvalue){
+      let newvalue=parseInt(prompt("first indexvalue"));
+      let newvalue2=parseInt(prompt("second index value"));
+      console.log(xvalue[newvalue][newvalue2]);
+      } 
 </script>
 </body>
 </html>        
