@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake game</title>
+</head>
+<style>
+    .box21{
+        height: 10vh;
+        width: 10%;
+        background-color:gold;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box22{
+        height: 10vh;
+        width: 10%;
+        background-color:gray;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box23{
+        height: 10vh;
+        width: 10%;
+        background-color: antiquewhite;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box24{
+        height: 10vh;
+        width: 10%;
+        background-color: yellow;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box25{
+        height: 10vh;
+        width: 10%;
+        background-color: red;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box16{
+        height: 10vh;
+        width: 10%;
+        background-color: gray;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box17{
+        height: 10vh;
+        width: 10%;
+        background-color:antiquewhite;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box18{
+        height: 10vh;
+        width: 10%;
+        background-color:yellow;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box19{
+        height: 10vh;
+        width: 10%;
+        background-color: red;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box20{
+        height: 10vh;
+        width: 10%;
+        background-color:green;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box11{
+        height: 10vh;
+        width: 10%;
+        background-color: antiquewhite;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box12{
+        height: 10vh;
+        width: 10%;
+        background-color:yellow;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box13{
+        height: 10vh;
+        width: 10%;
+        background-color:red ;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box14{
+        height: 10vh;
+        width: 10%;
+        background-color:green ;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box15{
+        height: 10vh;
+        width: 10%;
+        background-color:blue ;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box6{
+        height: 10vh;
+        width: 10%;
+        background-color:yellow;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box7{
+        height: 10vh;
+        width: 10%;
+        background-color:red;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box8{
+        height: 10vh;
+        width: 10%;
+        background-color:green;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box9{
+        height: 10vh;
+        width: 10%;
+        background-color:blue;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box10{
+        height: 10vh;
+        width: 10%;
+        background-color:antiquewhite;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box1{
+        height: 10vh;
+        width: 10%;
+        background-color:red;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box2{
+        height: 10vh;
+        width: 10%;
+        background-color:green;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box3{
+        height: 10vh;
+        width: 10%;
+        background-color:blue;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box4{
+        height: 10vh;
+        width: 10%;
+        background-color:antiquewhite;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    .box5{
+        height: 10vh;
+        width: 10%;
+        background-color:yellow;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+   .tp{
+    margin-top: 5rem;
+   }
+   
+    .bt{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+    }
+    .tp{
+        position: relative;
+    }
+    img{
+        position:absolute;
+        top:290px;
+        bottom:10px;
+        right:px;
+        left:420px;
+    }
+    .ladder{
+        position:absolute;
+        top:100px;
+        bottom:0px;
+        right:px;
+        left:600px;
+    }
+</style>
+<body>
+ <div class="tp">
+    <div class="bt">
+      <div class="box1">21</div>
+      <div class="box2">22</div>
+      <div class="box3">23</div>
+      <div class="box4">24</div>
+      <div class="box5">25</div>
+    </div>
+    <div class="bt">
+      <div class="box6">16</div>
+      <div class="box7">17</div>
+      <div class="box8">18</div>
+      <div class="box9">19</div>
+      <div class="box10">20</div>
+    </div>
+    <div class="bt">
+      <div class="box11">11</div>
+      <div class="box12">12</div>
+      <div class="box13">13</div>
+      <div class="box14">14</div>
+      <div class="box15">15</div>
+    </div>
+    <div class="bt">
+      <div class="box16">6</div>
+      <div class="box17">7</div>
+      <div class="box18">8</div>
+      <div class="box19">9</div>
+      <div class="box20">10</div>
+    </div>
+    <div class="bt">
+      <div class="box21">1</div>
+      <div class="box22">2</div>
+      <div class="box23">3</div>
+      <div class="box24">4</div>
+      <div class="box25">5</div>
+    </div>
+     </div>
+     <img src="snake.png" alt="snake" width="30%">
+      <img class="ladder" src="ladder.png" width="20%">
+</body>
+ <script>
+
+
+ </script>
+</html>
