@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validition</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    .form{
+        text-align: center;
+    }
+    .form{
+        margin-top:5rem;
+        
+      }
+
+</style>
+<body>
+    <div class="form"> 
+    <h1>form validition</h1>
+
+        <label>BILL AMOUNT:</label><br>
+        <input  placeholder="enter your amount" id="bill"><br><br>
+        <label>TIPS:</label><br>
+        <input placeholder="tip%" id="tips"><br><br>
+        <label>TIPS AMOUNT</label><br>
+        <input  id="tipsnumber" readonly><br><br>
+        <label>TOTAL</label><br>
+        <input  id="total" readonly><br><br>
+        <button id="btn" onmouseover="myfunction()">Calculate</button>
+    </div>
+</body>
+<script>
+     let value=document.getElementById("btn");
+     btn.addEventListener("click",myfunction);
+
+     function myfunction(){
+        var amt=document.getElementById("bill").value;
+        var tip=document.getElementById("tips").value;
+        tipsamt=(tip/100)*amt
+        document.getElementById("tipsnumber").value=tipsamt;
+        result=(parseInt(amt)+parseInt(tipsamt))
+        document.getElementById("total").value=result;
+     }
+
+</script>
+</html>
