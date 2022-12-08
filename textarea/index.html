@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<title>text</title>
+	
+	<style>
+		#sectio{
+			display:flex;
+			justify-content:space-around;
+		}
+		.sec2in span{
+			font-size:1rem;
+			font-weight:600;
+			color:gray;
+			padding-right:3rem;
+			text-transform:uppercase;
+		}
+        p{
+            margin-left:6rem; ;
+        }
+		button{
+			font-size:1.5rem;
+			background-color:orange;
+			color:white;
+            margin-left: 8rem;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="sectio">
+		<div id="sec1">
+			<h1>Write Your Post Here</h1>
+			<textarea id="text" name="" rows="10" cols="50"></textarea><br><br><br>
+            <p>Then click the button</p>
+			<button id="btn">click</button>
+		</div>
+		
+		<div id="sec2">
+			<h1>Your Post Here</h1>
+			<div class="sec2in">
+				<span id="hed"></span>
+				<i id="edit" ></i>
+				<i id="delete"></i>
+			</div>
+		</div>
+	</div>
+	
+<script>
+	let but=document.getElementById("btn");
+	btn.addEventListener("click",myFunction);
+	
+	function myFunction(){
+		let result=document.getElementById("text").value;
+			document.getElementById("hed").innerHTML=result;
+		
+			ico1="bi bi-pencil-square";
+			ico2="bi bi-trash";
+			document.getElementById("edit").className=ico1;
+			document.getElementById("delete").className=ico2;	
+	}
+
+    let del=document.getElementById("delete");
+    delete.addEventListener("click",mynewfun);
+     
+    function mynewfun(){
+      delete
+    }
+
+</script>
+</body>
+</html>
